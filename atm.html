@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +8,15 @@
 </head>
 <body>
     <p>
-        <img src="cajero.gif" />
+        <img src="cajero.gif" alt="Dibujo de un cajero automático" />
     </p>
     <p>
-        <input type="number" id="dinero"/>
+        <label for="dinero">¿Cuánto dinero quieres sacar?</label>
+        <input type="number" id="dinero" min="5" step="5"/>
         <input type="button" value="Extraer" id="Extraer" />
     </p>
     <p id="resultados"></p>
+    <p id="saldo"></p>
     <script src="cajero.js"></script>
 </body>
 </html>
